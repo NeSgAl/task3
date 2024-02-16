@@ -1,7 +1,41 @@
 #include <stdio.h>
 #include "hello_func.h"
+#include <locale.h>
 
-int main() {
+int main()
+{
+    setlocale(LC_ALL, "");
+
+    int menu;
+    printf(
+        "������� ����� ���������:\n" \
+        "1. ������� �� ������ � ����������\n" \
+        "2. �������� �� ���������� ���\n" \
+        "3. �����������\n"\
+        "> "
+    );
+    scanf("%d", &menu);
+
+    switch(menu)
+    {
+        case 1:
+            c2f();
+            break;
+        case 2:
+           vis();
+            break;
+        case 3:
+            calc();
+            break;
+        default:
+            printf("no choise\n");
+    }
+} 
+
+
+
+        
+// int main() {
     // Циклы
     // 1.1
     // когда не знаем сколько итераций
@@ -69,16 +103,16 @@ int main() {
 
 
 
-    // области видимости
-    if (1) 
-        printf("1\n");
+//     // области видимости
+//     if (1) 
+//         printf("1\n");
 
-    int num = 100;
+//     int num = 100;
 
-    {
-        int num = 2;
-        printf("%d\n", num);
-    }
+//     {
+//         int num = 2;
+//         printf("%d\n", num);
+//     }
 
-    printf("%d\n", num);
-}
+//     printf("%d\n", num);
+// }
