@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include "hello_func.h"
 #include <locale.h>
+#include "../inc/functions.h"
+
 
 int main()
 {
@@ -8,10 +9,10 @@ int main()
 
     int menu;
     printf(
-        "������� ����� ���������:\n" \
-        "1. ������� �� ������ � ����������\n" \
-        "2. �������� �� ���������� ���\n" \
-        "3. �����������\n"\
+        "Menu:\n" \
+        "1. celsius to farenhein\n" \
+        "2. solve equation\n" \
+        "3. calculator\n"\
         "> "
     );
     scanf("%d", &menu);
@@ -22,7 +23,7 @@ int main()
             c2f();
             break;
         case 2:
-           vis();
+            dis1();
             break;
         case 3:
             calc();

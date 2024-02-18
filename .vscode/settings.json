@@ -1,6 +1,5 @@
 {
     "files.associations": {
-        "stdio.h": "c",
-        "hello_func.h": "c"
+        "functions.h": "c"
     }
 }
